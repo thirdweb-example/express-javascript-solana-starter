@@ -1,13 +1,12 @@
-import express, { Application, Request, Response } from "express";
 import dotenv from "dotenv";
-
-import router from "@/routes/router";
+import express from "express";
+import router from "./routes/router.js";
 
 dotenv.config();
 
-const app: Application = express();
+const app = express();
 
-app.get("/", (_req: Request, res: Response) => {
+app.get("/", (_req, res) => {
   return res.status(200).json({
     message: "gm",
   });

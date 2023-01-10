@@ -1,12 +1,8 @@
 import { ThirdwebSDK } from "@thirdweb-dev/sdk/solana";
-import { Request, Response } from "express";
 
-const claimNFT = async (req: Request, res: Response) => {
+const claimNFT = async (req, res) => {
   const { address } = req.body;
-  const sdk = ThirdwebSDK.fromPrivateKey(
-    "devnet",
-    process.env.PRIVATE_KEY as string
-  );
+  const sdk = ThirdwebSDK.fromPrivateKey("devnet", process.env.PRIVATE_KEY);
   const programAddress = "7PSHtPXHjpVSJfD96xbLRq8JXzDVc1g2aAngjkC2W3c";
 
   try {
