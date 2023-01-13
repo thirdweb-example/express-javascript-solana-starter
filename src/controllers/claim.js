@@ -1,4 +1,4 @@
-import { ThirdwebSDK } from "@thirdweb-dev/sdk/solana";
+const { ThirdwebSDK } = require("@thirdweb-dev/sdk/solana");
 
 const claimNFT = async (req, res) => {
   // Get the address from the request body
@@ -30,4 +30,4 @@ const claimNFT = async (req, res) => {
   }
 };
 
-export default claimNFT;
+module.exports = claimNFT;

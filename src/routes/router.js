@@ -1,8 +1,8 @@
-import express from "express";
-import claimNFT from "../controllers/claim.js";
+const express = require("express");
+const claimNFT = require("../controllers/claim");
 
 const router = express.Router();
 
 router.post("/claim", claimNFT);
 
-export default router;
+module.exports = router;

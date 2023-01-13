@@ -26,8 +26,8 @@ PRIVATE_KEY=your_private_key
 - Run the project:
 
 ```bash
-npm run dev # npm
-yarn dev # yarn
+npm run start # npm
+yarn start # yarn
 ```
 
 ## Learn More
